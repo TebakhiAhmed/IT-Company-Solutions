@@ -1,9 +1,20 @@
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./navBar/NavBar";
+import Header from "./header/Header";
 function App() {
   return (
-    <div className="flex justify-center text-3xl font-bold underline">
-      Hello World
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index path = "/" element= {
+          <>
+          <NavBar />
+          <Header />
+          </>
+
+        } />
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
