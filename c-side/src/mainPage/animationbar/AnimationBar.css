@@ -1,0 +1,59 @@
+body {
+    overflow-x: hidden;
+  }
+
+.bar {
+    width: max-content;
+    animation: moveBar 38s linear infinite;
+  }
+
+  .bar:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes moveBar {
+    0%, 100% {
+      transform: translateX(-60%);
+    }
+    50% {
+      transform: translateX(130%);
+    }
+  }
+
+
+  .bar2 {
+    width: max-content;
+    animation: moveBar2 34s linear infinite;
+  }
+
+  .bar2:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes moveBar2 {
+    0%, 100% {
+      transform: translateX(-80%);
+    }
+    50% {
+      transform: translateX(140%);
+    }
+  }
+
+
+  .bar3 {
+    width: max-content;
+    animation: moveBar3 32s linear infinite;
+  }
+
+  .bar3:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes moveBar3 {
+    0%, 100% {
+      transform: translateX(-90%);
+    }
+    50% {
+      transform: translateX(160%);
+    }
+  }
